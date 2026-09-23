@@ -1,0 +1,8 @@
+{
+  "human_accuracy": 0.68,
+  "ai_accuracy": 0.707,
+  "hybrid_accuracy": 0.895,
+  "complementarity_rate": 0.407,
+  "override_gain": 0.19,
+  "deferral_rate": 0.01
+}
