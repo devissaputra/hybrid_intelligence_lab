@@ -1,5 +1,7 @@
 # Hybrid Intelligence Lab
 
+[![CI](https://github.com/devissaputra/hybrid_intelligence_lab/actions/workflows/ci.yml/badge.svg)](https://github.com/devissaputra/hybrid_intelligence_lab/actions/workflows/ci.yml)
+
 **An experimental harness for studying when humans and AI should decide alone, together, or defer.**
 
 > Research prototype. All bundled data and results are synthetic demonstrations. Nothing in this repository should be interpreted as evidence about real learners, teachers, or institutions.
