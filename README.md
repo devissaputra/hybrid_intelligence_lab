@@ -2,6 +2,8 @@
 
 [![CI](https://github.com/devissaputra/hybrid_intelligence_lab/actions/workflows/ci.yml/badge.svg)](https://github.com/devissaputra/hybrid_intelligence_lab/actions/workflows/ci.yml)
 
+
+**Category:** AI in Education
 **An experimental harness for studying when humans and AI should decide alone, together, or defer.**
 
 > Research prototype. All bundled data and results are synthetic demonstrations. Nothing in this repository should be interpreted as evidence about real learners, teachers, or institutions.
@@ -12,7 +14,7 @@
 
 AI-assisted learning decisions are often evaluated by comparing “human” against “model.” This repo makes the more interesting question executable: when do their errors complement one another, and what routing policies preserve human agency while using AI where it adds value?
 
-The engineering goal is simple: make the research logic inspectable. Every metric in the demo can be traced back to a small function, the demo data can be regenerated from a fixed seed, and the limitations are stated next to the claims rather than buried at the end.
+The simulator separates human performance, AI confidence, disagreement, deferral, and override so routing gains can be traced to specific cases instead of disappearing inside one aggregate score.
 
 ## Research questions
 
@@ -32,7 +34,7 @@ The reference pipeline follows five stages:
 4. **Routing policy**
 5. **Policy comparison**
 
-The current implementation is deliberately compact enough to audit. It is a foundation for a real study, not a theatrical “AI demo.”
+The baseline is intentionally transparent so alternative routing policies and cost assumptions can be tested before any real decision-support study.
 
 ## Core outputs
 
