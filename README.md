@@ -29,7 +29,7 @@ The simulator separates human performance, AI confidence, disagreement, deferral
 The reference pipeline follows five stages:
 
 1. **Decision simulation**
-2. **Confidence calibration**
+2. **Confidence-signal comparison**
 3. **Complementarity analysis**
 4. **Routing policy**
 5. **Policy comparison**
