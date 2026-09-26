@@ -1,5 +1,21 @@
 # Hybrid Intelligence Lab
 
+This simulator compares human-only, AI-only, and confidence-routed decisions, retaining each routing reason for error inspection. The synthetic generator deliberately links confidence to correctness, so strong hybrid performance reflects that assumption and must not be presented as evidence from a human study. Threshold sweeps reveal how often the policy defaults to the human and when complementary errors can be used.
+
+## Start here
+
+- [Calculations, evidence and verification scope](CALCULATIONS.md)
+- [Figure sources and exact numerical paths](docs/figure_spec.json)
+- [Data status](data/README.md)
+
+![Study question, data, design and interpretation](assets/review_overview.svg)
+
+![Defined calculation and source-linked evidence](assets/review_calculations.svg)
+
+**Review scope:** The existing suite requires unavailable dependencies; no full-suite pass is claimed. The bundled demonstration executed successfully in this review.
+
+## Detailed project documentation
+
 [![CI](https://github.com/devissaputra/hybrid_intelligence_lab/actions/workflows/ci.yml/badge.svg)](https://github.com/devissaputra/hybrid_intelligence_lab/actions/workflows/ci.yml)
 
 
@@ -8,7 +24,6 @@
 
 > Research prototype. All bundled data and results are synthetic demonstrations. Nothing in this repository should be interpreted as evidence about real learners, teachers, or institutions.
 
-![Architecture](docs/images/architecture.png)
 
 ## Why this project exists
 
@@ -24,7 +39,6 @@ The simulator separates human performance, AI confidence, disagreement, deferral
 
 ## What the repository does
 
-![Pipeline](docs/images/pipeline.png)
 
 The reference pipeline follows five stages:
 
@@ -45,7 +59,6 @@ The baseline is intentionally transparent so alternative routing policies and co
 - `override_gain`
 - `deferral_rate`
 
-![Synthetic demo dashboard](docs/images/demo_dashboard.png)
 
 The dashboard above is generated from **synthetic data** and is included only to show what the analysis surface looks like. It is not a reported empirical result.
 
@@ -84,7 +97,6 @@ hybrid_intelligence_lab/
 
 ## Research design in one picture
 
-![Research map](docs/images/research_map.png)
 
 The fuller design rationale is in [`docs/research_design.md`](docs/research_design.md), including constructs, assumptions, validation steps, and a proposed empirical extension.
 

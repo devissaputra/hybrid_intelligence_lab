@@ -1,0 +1,56 @@
+{
+  "question": "When does confidence-based routing help?",
+  "data": "Synthetic human and AI decisions; confidence is generated partly from correctness.",
+  "method": "Keep agreement; default to human for small confidence gaps; otherwise select the more confident source.",
+  "formula": "Complementarity = mean(human_correct XOR AI_correct).",
+  "interpretation": "The generator makes confidence informative about correctness by construction, which can produce optimistic hybrid gains. Override gain counts rescued AI errors, not net improvement after newly introduced errors; deferral means human default, not abstention.",
+  "status": "SYNTHETIC / RULE-BASED PROTOTYPE | no educational validity claim",
+  "source": "results/demo_metrics.json",
+  "rows": [
+    {
+      "label": "human_accuracy",
+      "path": [
+        "human_accuracy"
+      ],
+      "unit": "unitless"
+    },
+    {
+      "label": "ai_accuracy",
+      "path": [
+        "ai_accuracy"
+      ],
+      "unit": "unitless"
+    },
+    {
+      "label": "hybrid_accuracy",
+      "path": [
+        "hybrid_accuracy"
+      ],
+      "unit": "unitless"
+    },
+    {
+      "label": "complementarity_rate",
+      "path": [
+        "complementarity_rate"
+      ],
+      "unit": "unitless"
+    },
+    {
+      "label": "override_gain",
+      "path": [
+        "override_gain"
+      ],
+      "unit": "unitless"
+    },
+    {
+      "label": "deferral_rate",
+      "path": [
+        "deferral_rate"
+      ],
+      "unit": "unitless"
+    }
+  ],
+  "table_title": "Selected recorded values (units and context shown)",
+  "evidence_note": "See CALCULATIONS.md for data status, execution scope and interpretation.",
+  "finding": "This simulator compares human-only, AI-only, and confidence-routed decisions, retaining each routing reason for error inspection. The synthetic generator deliberately links confidence to correctness, so strong hybrid performance reflects that assumption and must not be presented as evidence from a human study. Threshold sweeps reveal how often the policy defaults to the human and when complementary errors can be used."
+}

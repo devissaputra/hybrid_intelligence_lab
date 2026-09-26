@@ -1,3 +1,7 @@
+# Calculation reading guide: ../CALCULATIONS.md (repository root).
+# Complementarity = mean(human_correct XOR AI_correct).
+# The generator makes confidence informative about correctness by construction, which can produce optimistic hybrid gains. Override gain counts rescued AI errors, not net improvement after newly introduced errors; deferral means human default, not abstention.
+
 from __future__ import annotations
 import numpy as np, pandas as pd
 
